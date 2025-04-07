@@ -8,7 +8,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 200;
+      const scrollThreshold = 80;
 
       if (window.scrollY > scrollThreshold) {
         setIsScrolled(true);
@@ -23,20 +23,22 @@ export default function Header() {
   return (
     <header>
 
-      <div className="h-18 text-xs font-medium flex flex-col justify-center gap-1 text-gray-400 text-s px-4 py-2">
+      <div className="h-18 font-light text-small flex flex-col justify-center gap-1 text-mediumgray px-4 py-2">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3">
             <span>📞 Call Us Today! <strong>480-681-0453</strong></span>
+            <span>|</span>
             <span>📍 6520 North 7th Street, Phoenix, AZ 85014</span>
+            <span>|</span>
             <span>⏰ <strong>Hours of Operation:</strong> Monday - Friday: 9am to 9pm & Saturday: 9am to 1pm</span>
           </div>
         </div>
         <div className="text-center text-sm mt-2">
-          <strong className="font-bold">PARTIAL HOSPITAL PROGRAM (PHP)</strong> & <strong className="font-bold">INTENSIVE OUT PATIENT (IOP)</strong> | DAYTIME & EVENING PROGRAMS AVAILABLE!
+          <strong>PARTIAL HOSPITAL PROGRAM</strong> (PHP) & <strong>INTENSIVE OUT PATIENT</strong> (IOP) | DAYTIME & EVENING PROGRAMS AVAILABLE!
         </div>
       </div>
 
-      <div className={`w-full p-3 top-0 flex justify-between items-center z-50 ${isScrolled ? "bg-white py-2 shadow-md h-auto fixed" : "mt-18 bg-green-500 absolute"}`}>
+      <div className={`w-full p-3 top-0 flex justify-between items-center z-50 ${isScrolled ? "bg-white py-2 shadow-md h-auto fixed" : "mt-18 bg-transparent absolute"}`}>
         <Link to="/" className="block">
           <img
             src={logoImage}

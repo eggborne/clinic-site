@@ -8,21 +8,21 @@ export default function Footer() {
         {/* Contact Cards */}
         <div className="grid md:grid-cols-3 gap-6 border-b border-gray-700 pb-8 mb-8">
           <div className="flex items-center gap-4 border border-gray-700 p-4">
-            <span className="text-red-600 text-2xl">☎</span>
+            <span className="text-highlight text-2xl">☎</span>
             <div>
               <p className="text-gray-400">Have a question? Call us today!</p>
               <p className="text-white font-bold text-lg">480-681-0453</p>
             </div>
           </div>
           <div className="flex items-center gap-4 border border-gray-700 p-4">
-            <span className="text-red-600 text-2xl">✉</span>
+            <span className="text-highlight text-2xl">✉</span>
             <div>
               <p className="text-gray-400">Need support? Send us a comment</p>
               <p className="text-white font-bold text-lg">info@wdrecoverycenters.com</p>
             </div>
           </div>
           <div className="flex items-center gap-4 border border-gray-700 p-4">
-            <span className="text-red-600 text-2xl">⏰</span>
+            <span className="text-highlight text-2xl">⏰</span>
             <div>
               <p className="text-white font-bold">Mon-Fri: 9am–9pm</p>
               <p className="text-white font-bold">Sat: 9am–1pm</p>

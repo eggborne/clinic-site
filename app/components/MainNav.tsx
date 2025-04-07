@@ -15,7 +15,7 @@ export default function MainNav() {
       <button
         onClick={toggleMenu}
         aria-label="Toggle menu"
-        className="md:hidden p-2 text-gray-600 hover:text-red-600 focus:outline-none"
+        className="md:hidden p-2 text-gray-600 hover:text-highlight focus:outline-none"
       >
         ☰
       </button>
@@ -29,7 +29,7 @@ export default function MainNav() {
         <li className="relative flex items-stretch">
           <button
             onClick={toggleDisordersMenu}
-            className="flex place-items-center px-5 text-gray-800 cursor-pointer hover:text-red-600"
+            className="flex place-items-center px-5 text-gray-800 cursor-pointer hover:text-highlight"
           >
             ADDICTIONS & DISORDERS
           </button>

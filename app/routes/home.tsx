@@ -2,7 +2,7 @@
 // import InsurancePartners from "../components/InsurancePartners";
 import AboutSection from "../components/AboutSection";
 import TreatmentOverview from "../components/TreatmentOverview";
-import heroImage from "../assets/slides/Drug-and-Substance-abuse-white-overlay.jpg.jpeg";
+import heroImage from "../assets/slides/mirror-daughter-mother.jpg.jpeg";
 
 export default function Home() {
   return (
