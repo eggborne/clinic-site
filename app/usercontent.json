@@ -6,25 +6,22 @@
       "The staff at WD Recovery & Wellness Center has been involved in providing high quality clinical programs for over 20 years. It is our mission to help save the lives of those suffering from different disorders. Our primary purpose is to treat the dysfunctional behavior of <strong>Eating Disorders, PTSD, Body Image Dismorphic Disorders, Traumas and Dissociations, Internal Family Systems, Dissociative Identity Disorders, Bullying Disorder, Sexual Abuse Disorder, Personality Disorders, Substance Abuse, Sex Addiction, Alcoholism, Self Harm, Gambling Addiction, Suicide Ideation Disorder, and Obsessive-Compulsive Personality Disorder OCPD</strong> in a supportive environment. Our treatment approach is centered on the special needs of each individual, to help them achieve recovery."
     ]
   },
-  "treatment-overview": {
-    "title": "WHAT WE TREAT",
-    "body": [
-      "Eating Disorders",
-      "Substance Abuse",
-      "PTSD",
-      "Personality Disorder",
-      "Sex Addiction",
-      "Alcoholism",
-      "Self Harm",
-      "Sexual Abuse Disorder",
-      "Internal Family Systems",
-      "Dissociative Identity Disorders",
-      "Bullying Disorder",
-      "Gambling Addiction",
-      "Trauma & Dissociation",
-      "Body Image Dysmorphic Disorder",
-      "Suicide Ideation Disorder",
-      "Obsessive-Compulsive Personality Disorder (OCPD)"
-    ]
-  }
+  "Addictions and Disorders": [
+    "Eating Disorders",
+    "Substance Abuse",
+    "Post-Traumatic Stress Disorder (PTSD)",
+    "Personality Disorder",
+    "Sex Addiction",
+    "Alcoholism",
+    "Self Harm",
+    "Sexual Abuse Disorder",
+    "Internal Family Systems",
+    "Dissociative Identity Disorders",
+    "Bullying Disorder",
+    "Gambling Addiction",
+    "Trauma & Dissociation",
+    "Body Image Dysmorphic Disorder",
+    "Suicide Ideation Disorder",
+    "Obsessive-Compulsive Personality Disorder (OCPD)"
+  ]
 }

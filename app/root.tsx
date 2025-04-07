@@ -1,8 +1,8 @@
-// src/root.tsx
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./styles/global.css";
+// import "./styles/global.css";
+import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
