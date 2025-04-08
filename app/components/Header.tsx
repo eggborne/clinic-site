@@ -49,7 +49,7 @@ export default function Header() {
 
         <div className="flex gap-4 self-stretch">
           <MainNav />
-          <button className="self-center text-white h-8 bg-red-500 aspect-square rounded-xs hover:bg-black transition" aria-label="Search">
+          <button className="self-center cursor-pointer text-white h-8 bg-red-500 aspect-square rounded-xs hover:bg-black transition" aria-label="Search">
             🔍
           </button>
         </div>

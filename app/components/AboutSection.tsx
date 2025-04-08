@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="py-10 bg-white font-heading">
+    <section className="bg-white font-heading">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
         {/* Video Column */}
@@ -25,7 +25,7 @@ export default function AboutSection() {
               About WD Recovery & Wellness Center
             </h2>
           </div>
-          <p className="text-offblack leading-relaxed text-base">
+          <p className="text-offblack text-lg leading-normal text-base">
             The staff at WD Recovery & Wellness Center has been involved in providing high
             quality clinical programs for over 20 years. It is our mission to help save the lives of
             those suffering from different disorders. Our primary purpose is to treat the

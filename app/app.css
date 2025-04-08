@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import 'tailwindcss';
-/* @import 'tailwindcss/preflight'; */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Roboto:wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Fugaz+One&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 @tailwind utilities;
+@import 'tailwindcss';
 
 @theme {
 
@@ -10,11 +12,46 @@
   --color-headline: #ffc300;
   --color-offblack: #1c1c1cee;
   --color-mediumgray: #676767;
+  --color-transwhite: #ffffffbb;
+  --color-button: #f72b0d;
 
   --font-heading: "Ubuntu", "Trebuchet MS", Helvetica, sans-serif;
-  --font-main: 'Roboto', serif;
-  --font-menu: "Exo";
+  --font-main: "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+  --font-menu: "Exo", "Trebuchet MS", Helvetica, sans-serif;
   --font-title: "Fugaz One", "Trebuchet MS", Helvetica, sans-serif;
-
   --text-small: 0.85rem;
+  --leading-main: 2.25rem;
+  --font-400: 400;
+
+  --footer-bg-url: url("assets/healing-love.jpg.jpeg")
+
+}
+
+@layer {
+  .font-weight-400 {
+    font-weight: var(--font-400);
+  }
+
+  .font-semithick {
+    font-weight: 500;
+  }
+
+  .font-thick {
+    font-weight: 700;
+  }
+
+  .footer-bg {
+    background-image: var(--footer-bg-url);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(-80%);
+  transition: opacity 1s ease, transform 1s ease, background-color 0.2s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

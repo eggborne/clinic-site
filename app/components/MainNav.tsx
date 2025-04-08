@@ -10,7 +10,7 @@ export default function MainNav() {
   const toggleDisordersMenu = () => setIsDisordersMenuOpen(!isDisordersMenuOpen);
 
   return (
-    <nav className="text-sm flex items-stretch">
+    <nav className="font-menu font-bold text-sm flex items-stretch">
       {/* Mobile menu toggle */}
       <button
         onClick={toggleMenu}
