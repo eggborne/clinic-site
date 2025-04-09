@@ -1,4 +1,3 @@
-
 import sealImage from "./../assets/seal.png";
 import aetnaImage from "./../assets/logo-aetna.png";
 import ahcccsImage from "./../assets/logo-ahcccs.png";
@@ -19,7 +18,7 @@ import tricareImage from "./../assets/logo-tricare.png";
 import usvaImage from "./../assets/logo-usva.png";
 import verifiedImage from "./../assets/verification.gif";
 import abc115Image from "./../assets/logo-abc15.png";
-import ImageCarousel from "./ImageCarousel";
+import InfiniteCarousel from "./InfiniteCarousel";
 
 export default function InsuranceSection() {
   const insuranceLogos = [
@@ -41,42 +40,34 @@ export default function InsuranceSection() {
     tricareImage,
     usvaImage,
     verifiedImage,
-    abc115Image,
-    // Duplicate logos for seamless looping
-    aetnaImage,
-    bcbsImage,
-    ahcccsImage,
-    anadImage,
-    buhpImage,
-    beaconImage,
-    bedaImage,
-    care1stImage,
-    cignaImage,
-    cmsgovImage,
-    humanaImage,
-    iaedpImage,
-    mcGellanImage,
-    mercyCareImage,
-    mhnImage,
-    tricareImage,
-    usvaImage,
-    verifiedImage,
     abc115Image
   ];
 
-  
   return (
-    <div className="text-white flex flex-col items-center text-center gap-6 w-full h-auto p-6 font-main relative">
-      <img src={sealImage}
-        alt="The Joint Commission | National Quality Approval"
-      />
-      <p className="text-mediumgray text-lg font-light">
-        We work with most PPO and HMO Insurance Companies
-      </p>
-      <p className="text-offblack font-heading font-semithick text-2xl max-w-4xl">
-        These are some of our partners who are contracted and some who are PPO:
-      </p>
-      <ImageCarousel images={insuranceLogos} />
-    </div>
+    <section className="py-12">
+      <div className="text-center flex flex-col items-center gap-6 w-full h-auto p-6 font-main">
+        <img
+          src={sealImage}
+          alt="The Joint Commission | National Quality Approval"
+          className="h-20 object-contain"
+        />
+        <p className="text-mediumgray text-lg font-light">
+          We work with most PPO and HMO Insurance Companies
+        </p>
+        <h2 className="text-offblack font-heading font-semithick text-2xl max-w-4xl">
+          These are some of our partners who are contracted and some who are PPO:
+        </h2>
+
+        <div className="w-full max-w-6xl mt-6">
+          <InfiniteCarousel
+            images={insuranceLogos}
+            autoScrollSpeed={60}
+            itemWidth={140}
+            gap={40}
+            height={70}
+          />
+        </div>
+      </div>
+    </section>
   );
 }

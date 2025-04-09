@@ -1,5 +1,4 @@
 // import HeroSlider from "../components/HeroSlider";
-// import InsurancePartners from "../components/InsurancePartners";
 import AboutSection from "../components/AboutSection";
 import TreatmentOverview from "../components/TreatmentOverview";
 import heroImage from "../assets/slides/mirror-daughter-mother.jpg.jpeg";
