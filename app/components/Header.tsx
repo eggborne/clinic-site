@@ -2,9 +2,13 @@ import { useState, useEffect } from "react";
 import logoImage from "../assets/wd-recovery-and-wellness-center.png";
 import { Link } from "react-router";
 import MainNav from "./MainNav";
+import Hamburger from "./Hamburger";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,14 +20,14 @@ export default function Header() {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header>
-
-      <div className="h-18 font-light text-small flex flex-col justify-center gap-1 text-mediumgray px-4 py-2">
+     
+      <div className="h-18 font-light text-small flex-col justify-center gap-1 text-mediumgray px-4 py-2 hidden lg:flex">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <span>
@@ -53,17 +57,24 @@ export default function Header() {
         </div>
       </div>
 
-      <div className={`w-full p-3 top-0 flex justify-between items-center z-50 ${isScrolled ? "bg-white py-2 shadow-md h-auto fixed" : "mt-18 bg-transparent absolute"}`}>
+      <div className={`w-full h-auto px-3 top-0 flex justify-between items-center transition-all duration-300 sm:transition-colors z-50 ${
+        isScrolled ? "bg-white shadow-md py-0 sm:py-1 fixed" : "lg:mt-18 bg-transparent py-2 fixed lg:absolute"
+        }`}>
+
+        <Hamburger clickAction={toggleMenu} isOpen={isMenuOpen} />
+
         <Link to="/" className="block">
           <img
             src={logoImage}
             alt="WD Recovery & Wellness Center"
-            className={`w-auto object-contain transition-all duration-300 ${isScrolled ? "h-17.5" : "h-26"}`}
+            className={`w-auto object-contain transition-all duration-300 ${
+              isScrolled ? "h-12 md:h-15" : "h-16 sm:h-19 xl:h-25"
+            }`}
           />
         </Link>
 
-        <div className="flex items-cnter gap-4">
-          <MainNav />
+        <div className="flex items-center gap-4">
+          <MainNav isOpen={isMenuOpen} />
           <button className="flex justify-center items-center cursor-pointer text-white h-8.5 bg-button aspect-square rounded-sm hover:bg-black transition" aria-label="Search">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="size-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />

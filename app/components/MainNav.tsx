@@ -2,34 +2,31 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import NavButton from "./NavButton";
 
-export default function MainNav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDisordersMenuOpen, setIsDisordersMenuOpen] = useState(false);
+interface MainNavProps {
+  isOpen: boolean;
+}
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+export default function MainNav({ isOpen }: MainNavProps) {
+
+  const [isDisordersMenuOpen, setIsDisordersMenuOpen] = useState(false);
   const toggleDisordersMenu = () => setIsDisordersMenuOpen(!isDisordersMenuOpen);
 
   return (
-    <nav className="font-menu font-bold text-sm flex items-stretch">
-      {/* Mobile menu toggle */}
-      <button
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-        className="md:hidden p-2 text-gray-600 hover:text-highlight focus:outline-none"
-      >
-        ☰
-      </button>
-
+    <nav className="font-menu font-bold text-sm h-16 max-w-[75dvw]">
       <ul
-        className={`absolute md:static font-semibold md:bg-transparent flex flex-col md:flex-row items-stretch gap-2 md:gap-0 md:p-0 shadow md:shadow-none z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "block" : "hidden md:flex"
-          }`}
+        className={`uppercase hidden lg:flex absolute h-full lg:static font-semibold lg:bg-transparent 
+          grid-cols-5
+          shadow lg:shadow-none z-50 transition-all duration-300 ease-in-out`}
       >
-        <NavButton isActive={true} label={'home'} url={'/'} />
+        <li className={`flex justify-center items-center px-4 min-w-[min-content]`}>
+          <NavButton isActive={true} label={'home'} url={'/'} />
+        </li>
 
-        <li className="relative flex items-stretch">
+
+        <li className={`relative flex justify-center items-center px-4 min-w-[min-content]`}>
           <button
             onClick={toggleDisordersMenu}
-            className="flex place-items-center px-5 text-gray-800 cursor-pointer hover:text-highlight"
+            className="text-gray-800 cursor-pointer hover:text-banner"
           >
             ADDICTIONS & DISORDERS
           </button>
@@ -54,11 +51,15 @@ export default function MainNav() {
             <li><NavLink to="/obsessive-compulsive-personality-disorder-ocpd">OCPD</NavLink></li>
           </ul>
         </li>
-
-        <NavButton isActive={false} label={'military / first responders'} url={'/military-and-first-responders'} />
-        <NavButton isActive={false} label={'contact'} url={'/contact'} />
-        <NavButton isActive={false} label={'blog'} url={'/blog'} />
-
+        <li className={`flex justify-center items-center px-4 min-w-[min-content]`}>
+          <NavButton isActive={false} label={'military / first responders'} url={'/military-and-first-responders'} />
+        </li>
+        <li className={`flex justify-center items-center px-4 min-w-[min-content]`}>
+          <NavButton isActive={false} label={'contact'} url={'/contact'} />
+        </li>
+        <li className={`flex justify-center items-center px-4 min-w-[min-content]`}>
+          <NavButton isActive={false} label={'blog'} url={'/blog'} />
+        </li>
       </ul>
     </nav>
   );

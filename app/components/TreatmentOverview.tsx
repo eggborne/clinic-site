@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
+import PersonalityModuleImage from "./../assets/personality-disorder-home-page-module.jpg.jpeg";
+import AlcoholismModuleImage from "./../assets/alcoholism-addiction-inner-page.jpg.jpeg";
 
 export default function TreatmentOverview() {
 
@@ -37,7 +39,7 @@ export default function TreatmentOverview() {
     };
   }, []);
   return (
-    <section className="tracking-main flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <div className="bg-banner p-6 x-auto px-4 flex flex-col place-items-center">
         <h2
           ref={headingRef}
@@ -64,9 +66,9 @@ export default function TreatmentOverview() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-6">
         <div className="shadow rounded overflow-hidden flex flex-col gap-6">
           <img
-            src="./app/assets/personality-disorder-home-page-module.jpg.jpeg"
+            src={PersonalityModuleImage}
             alt="Get Help From Our Team"
-            className="w-full h-56 object-cover"
+            className="w-full h-auto object-cover"
           />
           <div className="py-6 bg-offblack text-white h-full flex justify-center">
             <div className="px-5">
@@ -92,9 +94,9 @@ export default function TreatmentOverview() {
 
         <div className="shadow rounded overflow-hidden flex flex-col gap-6">
           <img
-            src=".\app\assets\alcoholism-addiction-inner-page.jpg.jpeg"
+            src={AlcoholismModuleImage}
             alt="How Do I Control"
-            className="w-full h-56 object-cover"
+            className="w-full h-auto object-cover"
           />
           <div className="py-6 bg-offblack text-white h-full flex justify-center">
             <div className="px-5">

@@ -14,7 +14,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="tracking-[0.5px] font-main ">
+      <body className="font-main ">
         {children}
         <ScrollRestoration />
         <Scripts />

@@ -8,13 +8,11 @@ interface NavButtonProps {
 
 export default function NavButton({ url, label, isActive }: NavButtonProps) {
   return (
-    <li className={`flex items-stretch uppercase`}>
-      <NavLink
-        to={url}
-        className={`flex place-items-center px-5 ${isActive ? "text-highlight" : "text-gray-800 hover:text-highlight"}`}
-      >
-        {label}
-      </NavLink>
-    </li>
+    <NavLink
+      to={url}
+      className={`text-center ${isActive ? "text-highlight" : "text-gray-800 hover:text-banner"}`}
+    >
+      {label}
+    </NavLink>
   )
 }

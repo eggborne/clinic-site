@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Roboto:wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Fugaz+One&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Lato:wght@300;400;500;700&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Fugaz+One&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @tailwind utilities;
 @import 'tailwindcss';
@@ -19,6 +19,7 @@
   --font-main: "Roboto", "Trebuchet MS", Helvetica, sans-serif;
   --font-menu: "Exo", "Trebuchet MS", Helvetica, sans-serif;
   --font-title: "Fugaz One", "Trebuchet MS", Helvetica, sans-serif;
+  --font-hero: "Lato", "Trebuchet MS", Helvetica, sans-serif;
   --text-small: 0.85rem;
   --leading-main: 2.25rem;
   --font-400: 400;

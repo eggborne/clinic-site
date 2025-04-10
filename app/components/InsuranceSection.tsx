@@ -44,17 +44,17 @@ export default function InsuranceSection() {
   ];
 
   return (
-    <section className="py-12">
-      <div className="text-center flex flex-col items-center gap-6 w-full h-auto p-6 font-main">
+    <section>
+      <div className="text-center flex flex-col items-center gap-6 w-full h-auto font-main">
         <img
           src={sealImage}
           alt="The Joint Commission | National Quality Approval"
-          className="h-20 object-contain"
+          className="h-30 object-contain"
         />
-        <p className="text-mediumgray text-lg font-light">
+        <p className="px-4 text-mediumgray text-lg font-light">
           We work with most PPO and HMO Insurance Companies
         </p>
-        <h2 className="text-offblack font-heading font-semithick text-2xl max-w-4xl">
+        <h2 className="px-4 text-offblack font-heading font-semithick text-2xl max-w-4xl">
           These are some of our partners who are contracted and some who are PPO:
         </h2>
 
@@ -62,9 +62,8 @@ export default function InsuranceSection() {
           <InfiniteCarousel
             images={insuranceLogos}
             autoScrollSpeed={60}
-            itemWidth={140}
-            gap={40}
-            height={70}
+            itemWidth={window.innerWidth > 720 ? 100 : 60}
+            gap={30}
           />
         </div>
       </div>

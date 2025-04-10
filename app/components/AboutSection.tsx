@@ -25,7 +25,7 @@ export default function AboutSection() {
               About WD Recovery & Wellness Center
             </h2>
           </div>
-          <p className="text-offblack text-lg leading-normal text-base">
+          <p className="text-offblack text-lg leading-normal">
             The staff at WD Recovery & Wellness Center has been involved in providing high
             quality clinical programs for over 20 years. It is our mission to help save the lives of
             those suffering from different disorders. Our primary purpose is to treat the

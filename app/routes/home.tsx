@@ -1,17 +1,14 @@
-// import HeroSlider from "../components/HeroSlider";
 import AboutSection from "../components/AboutSection";
 import TreatmentOverview from "../components/TreatmentOverview";
-import heroImage from "../assets/slides/mirror-daughter-mother.jpg.jpeg";
 import HelpBanner from "../components/HelpBanner";
 import InsuranceSection from "../components/InsuranceSection";
+import HeroDisplay from "../components/HeroDisplay";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-10 min-h-screen">
 
-      <div className="">
-        <img src={heroImage} />
-      </div>
+      <HeroDisplay />
 
       <AboutSection />
       <TreatmentOverview />
