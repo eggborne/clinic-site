@@ -1,27 +1,98 @@
 {
-  "about-section": {
+  "aboutSection": {
     "slogan": "Transforming Lives",
     "title": "About WD Recovery and Wellness Center",
     "body": [
       "The staff at WD Recovery & Wellness Center has been involved in providing high quality clinical programs for over 20 years. It is our mission to help save the lives of those suffering from different disorders. Our primary purpose is to treat the dysfunctional behavior of <strong>Eating Disorders, PTSD, Body Image Dysmorphic Disorders, Traumas and Dissociations, Internal Family Systems, Dissociative Identity Disorders, Bullying Disorder, Sexual Abuse Disorder, Personality Disorders, Substance Abuse, Sex Addiction, Alcoholism, Self Harm, Gambling Addiction, Suicide Ideation Disorder, and Obsessive-Compulsive Personality Disorder OCPD</strong> in a supportive environment. Our treatment approach is centered on the special needs of each individual, to help them achieve recovery."
     ]
   },
-  "Addictions and Disorders": [
+  "menuLinks": [
     "Eating Disorders",
-    "Substance Abuse",
-    "Post-Traumatic Stress Disorder (PTSD)",
     "Personality Disorder",
+    "Body Image Dysmorphic Disorder",
+    "Trauma and Dissociation Disorder",
+    "Drugs and Substance Abuse",
+    "Internal Family Systems Therapy",
+    "Post-Traumatic Stress Disorder (PTSD)",
     "Sex Addiction",
+    "Gambling Addiction",
+    "Bullying Disorder",
     "Alcoholism",
     "Self Harm",
     "Sexual Abuse Disorder",
-    "Internal Family Systems",
-    "Dissociative Identity Disorders",
-    "Bullying Disorder",
-    "Gambling Addiction",
-    "Trauma & Dissociation",
-    "Body Image Dysmorphic Disorder",
     "Suicide Ideation Disorder",
-    "Obsessive-Compulsive Personality Disorder (OCPD)"
+    "Obsessive-Compulsive Personality Disorder (OCPD)",
+    "Child and Adult Trafficking Trauma Recovery",
+    "Oppositional Defiance Recovery",
+    "Domestic Violence Recovery",
+    "Compulsive Shopping Disorder",
+    "Oppositional Defiant Disorder (ODD)"
+  ],
+  "slideServices": [
+    {
+      "verb": "treat",
+      "name": "personality",
+      "description": "disorder"
+    },
+    {
+      "verb": "treat",
+      "name": "sex",
+      "description": "addiction"
+    },
+    {
+      "verb": "treat",
+      "name": "eating",
+      "description": "disorders"
+    },
+    {
+      "verb": "treat",
+      "name": "self harm",
+      "description": "disorders"
+    },
+    {
+      "verb": "treat",
+      "name": "alcohol",
+      "description": "addiction"
+    },
+    {
+      "verb": "treat",
+      "name": "gambling",
+      "description": "addictions"
+    },
+    {
+      "verb": "treat",
+      "name": "binge eating",
+      "description": "disorder"
+    },
+    {
+      "verb": "treat",
+      "name": "body dysmorphic",
+      "description": "disorder"
+    },
+    {
+      "verb": "treat",
+      "name": "trauma and disassociation",
+      "description": "disorder"
+    },
+    {
+      "verb": "treat",
+      "name": "sexual abuse",
+      "description": "disorder"
+    },
+    {
+      "verb": "provide",
+      "name": "internal family systems",
+      "description": "therapy"
+    },
+    {
+      "verb": "treat",
+      "name": "bullying",
+      "description": "disorder"
+    },
+    {
+      "verb": "treat",
+      "name": "drug & substance",
+      "description": "abuse"
+    }
   ]
 }
